@@ -1,7 +1,7 @@
 All My Tweeters
 ---------------
 
-The commit messages in this repo are my tweets archived FOR-EVAR
+The commit messages in this repo (on the philipthrasher branch) are my tweets archived FOR-EVAR
 
 I stole the idea from @holman. He's cool. 
 
