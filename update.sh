@@ -11,7 +11,7 @@ email="philipthrasher@gmail.com"
 
 last_id=$(cat last-tweet-id)
 
-madrox --import=twitter --since-id=$last_id --email=$email $login
+madrox --import=twitter --since-id=$last_id --email=$email $login || exit 1
 
 last_id=$(curl https://twitter.com/users/show/$login.json --silent | tr ',' "\n" | grep -m1 '"id"' | sed -e 's/"id"://g')
 echo $last_id > last-tweet-id
